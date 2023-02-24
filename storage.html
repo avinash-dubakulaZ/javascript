@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        #left,#right{
+            display: block;
+            width: 35%;
+            border:5px solid midnightblue;
+            background-color: rgb(231, 231, 78);
+        }
+        #left{
+            border-right: none;
+        }
+
+        #btn1{
+            padding: 4% 3.5%;
+            border-radius: 50%;
+            border:3px solid black;
+            background-image: linear-gradient(to right top, #ef5fe0, #f271e6, #f581ed, #f890f2, #fb9ff8);
+    
+        }
+        #btn1:active{
+            transform: scale(0.95);
+            background-image: linear-gradient(to right top, #ef5fe0, #f271e6, #f581ed, #f890f2, #fb9ff8);
+        }
+        .head1,.head2{
+            padding: 2%;
+        }
+        #container{
+            display: block;
+            width:80%;
+            border:5px solid black;
+            text-align: center;padding: 7%;
+        }
+        body{
+            background-color:rgb(46, 217, 223);
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-around;
+        }
+        #d1{
+            display: flex;
+            margin-top: 5%;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+        <div id="container">
+        <input type="button" value="Increment" onclick="f1()" id="btn1"><br>
+        <div id="d1">
+            <div id="left">
+                <h1 class="head1">Local count</h1>
+                <h1 class="head1" id="head1" >fgh</h1>
+            </div>
+            <div id="right">
+                <h1 class="head2">Session count</h1>
+                <h1 class="head2" id="head2">fgh</h1>
+            </div>
+            
+        </div>     
+        </div>
+    <script src="storage.js"></script>
+</body>
+</html>
